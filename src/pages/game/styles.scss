@@ -1,0 +1,102 @@
+
+.flip_wrapper_fl {
+    min-height: 100vh;
+    max-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_container_fl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header_container_fl {
+    width: 100%;
+    padding: 1rem 0;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.timer_fl {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    div {
+        width: 6rem;
+        height: 6rem;
+
+        display: block;
+        background-color: $green_main;
+        padding: .6rem .8rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white_main;
+        font-size: 3rem;
+    }
+}
+
+
+.header_logo_fl {
+    width: 12rem;
+    margin: auto;
+}
+
+.highligt_fl {
+    color: $green_main;
+    font-size: 2rem;
+}
+
+.footer_info_fl {
+    color: $white_main;
+}
+
+
+.grid_container_fl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.end_time div {
+    background-color: red;
+}
+
+
+@media (max-width: 1080px) {
+
+
+    .header_logo_fl {
+        width: 36rem;
+    }
+
+    .highligt_fl {
+        font-size: 5rem;
+    }
+
+    .footer_info_fl {
+        font-size: 2rem;
+    }
+
+
+    .card {
+        width: 12rem !important;
+    }
+
+
+}

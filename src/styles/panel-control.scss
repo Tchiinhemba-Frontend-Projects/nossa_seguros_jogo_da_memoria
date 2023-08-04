@@ -1,0 +1,253 @@
+#panel-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px 5px 5px; /*top, right, bottom, left*/
+    margin: 0px 0 20px 0;
+    background-color: $blue_main;
+    border-radius: 10px;
+
+  }
+  
+  .gameButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /*Botão Play*/
+  
+  .button.play {
+    width: 20%;
+    height: 3em;
+    box-sizing: border-box;
+    background-color: #8ed0f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  
+    padding: 1px 1px;
+    margin: 1px 10px;
+  
+    font-size: 1em;
+    font-weight: 450;
+    text-align: center;
+    text-decoration: none;
+  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .play:hover {
+    background-color: #4bb2e2f1;
+    color: rgb(0, 0, 0);
+    transform: scale(1.03); /* Efeito zoom no hover*/
+  }
+  
+  .play:disabled {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: inherit;
+    transform: scale(1);
+  }
+  
+  
+  /*Botão Nova palavra inicial*/
+  
+  .button.newWord2 {
+    width: 25%;
+    height: 3em;
+    box-sizing: border-box;
+    background-color: #8ed0f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  
+    padding: 1px 1px;
+    margin: 1px 10px;
+  
+    font-size: 1em;
+    font-weight: 450;
+    text-align: center;
+    text-decoration: none;
+  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .newWord2:hover{
+    background-color: #4bb2e2f1;
+    color: rgb(0, 0, 0);
+    transform: scale(1.03);
+  }
+  
+  .newWord2:disabled{
+    display: none;
+  }
+  
+  
+  /* Sub-Container do GameButtons*/
+  .form-group{
+    width: 33%;
+  }
+  
+  /*Botão Niveis */
+  
+  #btLevel {
+    width: 90%;
+    height: 3em;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    background-color: #8ed0f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  
+    padding: 1px 1px;
+    margin: 1px 10px;
+  
+  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  #btLevel:hover {
+    background-color: #4bb2e2f1;
+    color: rgb(0, 0, 0);
+    transform: scale(1.03); 
+  }
+  
+  .gameinfo{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 0.2em;
+    margin: 0.2em;
+    background-color: $green_main;
+    color: $blue_main;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  /*TIMER*/
+  
+  #panel-control .timer.gameStarted {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+    background-color: $green_main;
+    border-radius: 5px;
+  }
+  
+  #panel-control .timer:not(.gameStarted) {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+    background-color: $green_main;
+    border-radius: 5px;
+  }
+  
+  /*Pontuação Top*/
+  
+  #panel-control .points-top.gameStarted {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+    background-color: $green_main;
+    border-radius: 5px;
+  }
+  
+  #panel-control .points-top:not(.gameStarted) {
+    width: 33%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+    background-color: $green_main;
+    color: $blue_main;
+    border-radius: 5px;
+  }
+  
+  /*Pontuação*/
+  
+  #panel-control .point.gameStarted {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+    background-color: $green_main;
+    color: $blue_main;
+    border-radius: 5px;
+  }
+  
+  #panel-control .point:not(.gameStarted) {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+    background-color: $green_main;
+    color: $blue_main;
+    border-radius: 5px;
+  };
+  
+  
+  .hide {
+    display: none;
+  }
+
+
+
+  .timer_cp {
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: items;
+    justify-content: center;
+    background-color: $green_main;
+    padding: 1rem;
+
+    color: $blue_main;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    transition: background-color 1s ease;
+  }
+
+
+  .end_time {
+    background-color: red;
+    color: $white_main;
+  }
