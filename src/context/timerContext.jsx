@@ -4,7 +4,7 @@ const TimerContext = createContext();
 
 const TimerProvider = ({ children }) => {
 
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(5);
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
   const [disabled, setDisabled] = useState(false);

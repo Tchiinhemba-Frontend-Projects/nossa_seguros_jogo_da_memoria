@@ -19,7 +19,7 @@ const Game = () => {
     setGameStarted,
     resetState,
     timerColor,
-    setTimerColor
+    setTimerColor,
   } = useContext(TimerContext);
 
   const { nossaSeguros, fallBack } = assets();
@@ -78,13 +78,12 @@ const Game = () => {
   };
 
   function endTime(timer) {
-
-    if(timerColor == 'green' && timer <= 5) {
-      return ''
+    if (timerColor == "green" && timer <= 5) {
+      return "";
     }
 
-    if(timerColor == 'red' && timer <= 15) {
-      return "end_time"
+    if (timerColor == "red" && timer <= 15) {
+      return "end_time";
     }
   }
 
